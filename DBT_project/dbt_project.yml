@@ -1,0 +1,25 @@
+name: DBT_project
+version: 1.0.0
+config-version: 2
+profile: DBT_project
+model-paths:
+  - models
+analysis-paths:
+  - analyses
+test-paths:
+  - tests
+seed-paths:
+  - seeds
+macro-paths:
+  - macros
+snapshot-paths:
+  - snapshots
+models:
+  DBT_project:
+    my_first_dbt_model:
+        enabled: false
+    my_second_dbt_model:
+        enabled: false
+    materialized: view
+
+    

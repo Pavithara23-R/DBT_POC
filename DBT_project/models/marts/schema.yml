@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_ev
+    description: "Staging model for electric vehicle dataset"
+    columns:
+      - name: vin
+        description: "Unique vehicle identifier"
+        tests:
+          - not_null
+
+  - name: dim_vehicle_type
+    description: "Dimension table for EV attributes"
+    columns:
+      - name: make
+        description: "EV manufacturer"
+        tests:
+          - not_null
+
+  - name: fct_ev_summary
+    description: "Fact summary table for EVs"
+    columns:
+      - name: total_vehicles
+        description: "Total number of EVs aggregated"
+        tests:
+          - not_null
