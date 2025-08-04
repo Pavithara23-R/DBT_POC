@@ -6,6 +6,6 @@ DBT_project:
       role: ACCOUNTADMIN
       warehouse: COMPUTE_WH
       database: DBT_DB
-      schema: DBT_SC
-      account: 'EYPPJVA-SYB12801'
-      user: 'Thara'
+      schema: DBT_TARGET_SC
+      account: 'RNGQJWH-BP88765'
+      user: 'Pavi'

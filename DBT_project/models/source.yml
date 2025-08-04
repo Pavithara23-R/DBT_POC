@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: ev_source
-    database: airflow_db
-    schema: airflow_sc
+    database: dbt_db
+    schema: dbt_sc
     tables:
       - name: electric_vehicles
         description: Raw EV data loaded from CSV
