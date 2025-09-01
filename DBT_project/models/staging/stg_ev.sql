@@ -11,7 +11,8 @@ SELECT
     {{ clean_text('postal_code') }} AS postal_code,
     {{ clean_text('county') }} AS county,
     {{ clean_text('electric_utility') }} AS electric_utility,
-
+   cafv_eligibility,
+   base_msrp,
     CASE 
         WHEN electric_range = 0 THEN 'Unknown or Hybrid'
         WHEN electric_range <= 100 THEN 'Short Range'
@@ -20,3 +21,6 @@ SELECT
     END AS range_category
 
 FROM {{ source('ev_source', 'electric_vehicles') }}
+
+
+
